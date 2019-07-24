@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     stages {
         stage('Example Build') {
             steps {
@@ -10,7 +10,7 @@ pipeline {
         stage('Example Test') {
             steps {
                 echo 'Hello, Harry'
-                sh '"example test"'
+                sh 'env'
             }
         }
     }
